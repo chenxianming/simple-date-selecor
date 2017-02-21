@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./css/simple-dateselector.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="quickcms" />
+    <meta charset="UTF-8">
+    <title>simple-dateselector</title>
+    <style>
+        body{ background:#f9fafb; }
+
+        #container{ padding:20px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="simpledateselector">
+            <input type="text" />
+        </div>
+        <a style="margin-top:30px;font-size:12px;display:block" href="https://github.com/chenxianming/simple-date-selecor" target="_blank">Github</a>
+    </div>
+    <script src="lib/simple-dateselector.js"></script>
+    <script>
+        var els = document.getElementsByClassName('simpledateselector');
+        for(var i =0;i<els.length;i++){
+            var a = new simpleDateSelector(els[i]);
+            a.init();
+        }
+
+    </script>
+</body>
+</html>
